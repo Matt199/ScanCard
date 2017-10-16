@@ -12,9 +12,12 @@
 		4E9193C21F93B9C2007A38C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9193C01F93B9C2007A38C7 /* Main.storyboard */; };
 		4E9193C41F93B9C2007A38C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E9193C31F93B9C2007A38C7 /* Assets.xcassets */; };
 		4E9193C71F93B9C2007A38C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E9193C51F93B9C2007A38C7 /* LaunchScreen.storyboard */; };
+		C95FEAD4C96C1B3B228D166C /* Pods_ScanCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4003B89519DF21E4DFE60C8B /* Pods_ScanCard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		113A0662C64740E9D3B72E7B /* Pods-ScanCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanCard/Pods-ScanCard.debug.xcconfig"; sourceTree = "<group>"; };
+		4003B89519DF21E4DFE60C8B /* Pods_ScanCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9193B91F93B9C2007A38C7 /* ScanCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E9193BC1F93B9C2007A38C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E9193BE1F93B9C2007A38C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,8 @@
 		4E9193C31F93B9C2007A38C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E9193C61F93B9C2007A38C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E9193C81F93B9C2007A38C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E9193CE1F93BA37007A38C7 /* ScanCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScanCard-Bridging-Header.h"; sourceTree = "<group>"; };
+		569467D4F0F9BB6C1FE31719 /* Pods-ScanCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScanCard/Pods-ScanCard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95FEAD4C96C1B3B228D166C /* Pods_ScanCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E2B8FAF57C7E5B38B231BC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				113A0662C64740E9D3B72E7B /* Pods-ScanCard.debug.xcconfig */,
+				569467D4F0F9BB6C1FE31719 /* Pods-ScanCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4E9193B01F93B9C2007A38C7 = {
 			isa = PBXGroup;
 			children = (
 				4E9193BB1F93B9C2007A38C7 /* ScanCard */,
 				4E9193BA1F93B9C2007A38C7 /* Products */,
+				1E2B8FAF57C7E5B38B231BC2 /* Pods */,
+				AF9D8E0F6C4C3EA842E6ADB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,17 @@
 				4E9193C31F93B9C2007A38C7 /* Assets.xcassets */,
 				4E9193C51F93B9C2007A38C7 /* LaunchScreen.storyboard */,
 				4E9193C81F93B9C2007A38C7 /* Info.plist */,
+				4E9193CE1F93BA37007A38C7 /* ScanCard-Bridging-Header.h */,
 			);
 			path = ScanCard;
+			sourceTree = "<group>";
+		};
+		AF9D8E0F6C4C3EA842E6ADB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4003B89519DF21E4DFE60C8B /* Pods_ScanCard.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E9193CB1F93B9C2007A38C7 /* Build configuration list for PBXNativeTarget "ScanCard" */;
 			buildPhases = (
+				F0E363E091D7F56D2D22B9BF /* [CP] Check Pods Manifest.lock */,
 				4E9193B51F93B9C2007A38C7 /* Sources */,
 				4E9193B61F93B9C2007A38C7 /* Frameworks */,
 				4E9193B71F93B9C2007A38C7 /* Resources */,
+				C14946A9D8C1EC2E34EACBFB /* [CP] Embed Pods Frameworks */,
+				C3443F1ECEEB13C234E91CC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C14946A9D8C1EC2E34EACBFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanCard/Pods-ScanCard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3443F1ECEEB13C234E91CC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanCard/Pods-ScanCard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E363E091D7F56D2D22B9BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScanCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E9193B51F93B9C2007A38C7 /* Sources */ = {
@@ -272,6 +352,7 @@
 		};
 		4E9193CC1F93B9C2007A38C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 113A0662C64740E9D3B72E7B /* Pods-ScanCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -280,6 +361,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Boring.ScanCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScanCard/ScanCard-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,6 +369,7 @@
 		};
 		4E9193CD1F93B9C2007A38C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 569467D4F0F9BB6C1FE31719 /* Pods-ScanCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +378,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Boring.ScanCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScanCard/ScanCard-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
